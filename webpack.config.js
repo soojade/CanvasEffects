@@ -1,8 +1,8 @@
-const path = require('path')
+const path = require('path');
 // const webpack = require('webpack')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
 
 module.exports = {
   mode: 'development',
@@ -30,14 +30,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'bubble/index.html',
-      title: 'bubble effect',
+      title: '鼠标滑动生成气泡',
       chunks: ['bubble'],
       inlineSource: '.(js|css)$' // 行内模式插入 js css
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'geometry/index.html',
-      title: 'geometry effect',
+      title: '鼠标点击生成几何图形',
       chunks: ['geometry'],
       inlineSource: '.(js|css)$'
     }),
@@ -49,4 +49,4 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'www'),
     inline: true
   }
-}
+};
