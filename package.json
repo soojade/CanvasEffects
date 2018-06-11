@@ -1,7 +1,7 @@
 {
-  "name": "mouse-move-effect",
+  "name": "CanvasEffects",
   "version": "1.0.0",
-  "description": "鼠标滑动生成特效",
+  "description": "canvas 特效",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soojade/mouse-move-effect.git"
+    "url": "git+https://github.com/soojade/CanvasEffects.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/soojade/mouse-move-effect/issues"
+    "url": "https://github.com/soojade/CanvasEffects/issues"
   },
-  "homepage": "https://github.com/soojade/mouse-move-effect#readme",
+  "homepage": "https://github.com/soojade/CanvasEffects#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
@@ -39,3 +39,4 @@
     "webpack-dev-server": "^3.1.4"
   }
 }
+
