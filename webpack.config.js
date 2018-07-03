@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: {
     bubble: './src/bubble/index.js',
-    geometry: './src/geometry/index.js'
+    particle: './src/particle/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'www'),
@@ -36,9 +36,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'geometry/index.html',
-      title: '鼠标点击生成几何图形',
-      chunks: ['geometry'],
+      filename: 'particle/index.html',
+      title: '鼠标滑动粒子连线特效',
+      chunks: ['particle'],
       inlineSource: '.(js|css)$'
     }),
     new HtmlWebpackInlineSourcePlugin()
