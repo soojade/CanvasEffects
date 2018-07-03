@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: {
     bubble: './src/bubble/index.js',
-    particle: './src/panel/index.js'
+    panel: './src/panel/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'www'),
