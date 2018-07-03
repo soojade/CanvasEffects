@@ -8,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: {
     bubble: './src/bubble/index.js',
-    particle: './src/particle/index.js'
+    particle: './src/panel/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'www'),
@@ -36,9 +36,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'particle/index.html',
-      title: '鼠标滑动粒子连线特效',
-      chunks: ['particle'],
+      filename: 'panel/index.html',
+      title: '绘制仪表盘',
+      chunks: ['panel'],
       inlineSource: '.(js|css)$'
     }),
     new HtmlWebpackInlineSourcePlugin()
