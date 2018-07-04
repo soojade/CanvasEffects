@@ -8,7 +8,8 @@ module.exports = {
   mode: 'development',
   entry: {
     bubble: './src/bubble/index.js',
-    panel: './src/panel/index.js'
+    panel: './src/panel/index.js',
+    polygon: './src/polygon/index.js'
   },
   output: {
     path: path.resolve(__dirname, 'www'),
@@ -39,6 +40,13 @@ module.exports = {
       filename: 'panel/index.html',
       title: '绘制仪表盘',
       chunks: ['panel'],
+      inlineSource: '.(js|css)$'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: 'polygon/index.html',
+      title: '点击随机生成多边形',
+      chunks: ['polygon'],
       inlineSource: '.(js|css)$'
     }),
     new HtmlWebpackInlineSourcePlugin()
