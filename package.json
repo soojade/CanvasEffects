@@ -1,7 +1,7 @@
 {
-  "name": "canvas-effects",
+  "name": "canvas-example",
   "version": "1.0.0",
-  "description": "canvas 特效",
+  "description": "canvas 示例",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soojade/CanvasEffects.git"
+    "url": "git+https://github.com/soojade/CanvasExample.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/soojade/CanvasEffects/issues"
+    "url": "https://github.com/soojade/CanvasExample/issues"
   },
-  "homepage": "https://github.com/soojade/CanvasEffects#readme",
+  "homepage": "https://github.com/soojade/CanvasExample#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
